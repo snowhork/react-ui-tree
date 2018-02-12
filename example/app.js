@@ -56,7 +56,7 @@ class App extends Component {
     );
   }
 
-  handleChange = tree => {
+  handleChange = (tree, parent, node) => {
     this.setState({
       tree: tree
     });

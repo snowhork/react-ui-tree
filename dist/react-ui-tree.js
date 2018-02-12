@@ -139,6 +139,7 @@ var _initialiseProps = function _initialiseProps() {
   };
 
   this.dragStart = function (id, dom, e) {
+    if (_this2.props.disabled) return;
     _this2.dragging = {
       id: id,
       w: dom.offsetWidth,
